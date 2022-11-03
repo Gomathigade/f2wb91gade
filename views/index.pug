@@ -4,11 +4,11 @@ block content
   h1= title
   p Welcome to #{title}, northwest missouri university
 
-  button(type="button" class="btn btn-outline-info" onclick='doBump()') Press Me
+  button(type="button" class="btn btn-info" onclick='doBump()') Press Me
 
   br
   br
-  div#bump(class="p-3 mb-2 bg-warning text-dark border border-dark d-inline-flex") Bump the count.
+  div#bump(class="p-3 mb-2 bg-success text-dark border border-dark d-inline-flex") Bump the count.
 
   script. 
     var count = 0
@@ -19,5 +19,8 @@ block content
       bump++
       document.getElementById('bump').innerText = `Count ${count} with bump ${bump}`
     }
-    br
+
+
+  br
+  br
   a(href="/Aeroplane") click here to land on Aeroplane page
